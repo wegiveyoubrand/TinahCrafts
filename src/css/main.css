@@ -5,6 +5,17 @@
   width: 100%;
   height: calc(100% - 5rem);
   background: #fff222;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.menu.active {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .menu-content {
@@ -49,7 +60,8 @@
 }
 
 .menu-content > div a:hover {
-  background: rgba(80, 78, 51, 0.7);
+  background: rgba(191, 179, 15, 0.7);
+  border-radius: 20px;
 }
 
 header {
