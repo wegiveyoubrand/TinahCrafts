@@ -1,0 +1,27 @@
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  font-family: "Rajdhani";
+}
