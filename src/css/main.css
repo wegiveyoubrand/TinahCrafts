@@ -1,3 +1,57 @@
+.menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 5rem);
+  background: #fff222;
+}
+
+.menu-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.menu-content > div {
+  height: 100px;
+}
+
+.menu-content > div a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  color: #030303;
+}
+
+.menu-content > div a:hover {
+  background: rgba(80, 78, 51, 0.7);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
