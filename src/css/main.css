@@ -97,6 +97,28 @@ section {
   overflow-x: scroll;
 }
 
+.notification {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background: darkblue;
+  border-radius: 0 0 10px blue;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.notification .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.notification .close i {
+  font-size: 80%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
