@@ -143,6 +143,35 @@ section {
   color: red;
 }
 
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.cards .card {
+  padding: 20px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: rgba(255, 242, 34, 0.75);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +189,8 @@ header {
   -webkit-box-shadow: 0 0 5px rgba(34, 34, 34, 0.3);
           box-shadow: 0 0 5px rgba(34, 34, 34, 0.3);
   padding: 20px;
+  background-color: #fff;
+  z-index: 1000;
 }
 
 header .logo {
@@ -209,6 +240,33 @@ header .menu-toggle:hover {
 main {
   width: 100%;
   height: calc(100% - 5rem);
+}
+
+.delivey-info {
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delivey-info p {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.delivey-info p:hover {
+  cursor: crosshair;
+  border-bottom: 1px solid #000;
+  font-weight: 700;
 }
 
 *, *::before, *::after {
