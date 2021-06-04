@@ -4,7 +4,7 @@
   bottom: 0;
   width: 100%;
   height: calc(100% - 5rem);
-  background: #fff222;
+  background: #bfb30f;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transform-origin: top;
@@ -37,11 +37,21 @@
 
 .menu-content > div {
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
 }
 
 .menu-content > div a {
   height: 100%;
-  width: 100%;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,12 +61,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  opacity: .9;
   text-decoration: none;
   text-align: center;
   color: #030303;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .menu-content > div a:hover {
