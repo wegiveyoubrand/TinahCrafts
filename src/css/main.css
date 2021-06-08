@@ -200,12 +200,13 @@ header .logo {
 }
 
 header .name {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: 1px;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  color: #492e16;
 }
 
 header .name:hover {
